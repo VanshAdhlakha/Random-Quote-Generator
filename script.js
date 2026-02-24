@@ -18,7 +18,7 @@ function getQuote(){
     })
     .then(function(data){
         quo.innerText=`"${data.quote}"`
-        au.innerHTML = `"~${data.author}"`
+        au.innerHTML = `~${data.author}`
     })
     .catch(function(error){
         quo.innerText="Failed to fetch quote"
